@@ -8,6 +8,9 @@ router.get("/create", (req,res)=>{ //SHOW
     res.render("celebrities/new-celebrity")
 })
 
+
+
+
 router.post("/new-celebrity", (req,res,next)=>{ // SEND
     console.log(req.body)
     const {name, occupation, catchPhrase} = req.body
