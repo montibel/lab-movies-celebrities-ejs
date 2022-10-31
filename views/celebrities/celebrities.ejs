@@ -1,5 +1,15 @@
+<h2>New Celebrity</h2>
 
-<h4><%= Celebrity.title %></h4>
-
-<a href="/celebrities/create">Create New Celebrity</a>
-<a href="/celebrities/celebrities">List of Celebrities</a>
+<form action="/celebrities/new-celebrity" method="post">
+    
+        <label class="form-label">Name
+             <input type="text" name="name"  placeholder="Name" class="form-control">
+        </label>        
+        <label class="form-label">Occupation
+             <input type="text" name="occupation"  placeholder="Name" class="form-control">
+        </label>   
+        <label class="form-label">CatchPhrase
+             <input type="text" name="catchPhrase"  placeholder="Name" class="form-control">
+        </label>  
+        <button>Submit</button>  
+</form>
