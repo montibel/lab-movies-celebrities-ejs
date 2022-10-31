@@ -8,9 +8,6 @@ router.get("/create", (req,res)=>{ //SHOW
     res.render("celebrities/new-celebrity")
 })
 
-
-
-
 router.post("/new-celebrity", (req,res,next)=>{ // SEND
     console.log(req.body)
     const {name, occupation, catchPhrase} = req.body
@@ -23,7 +20,7 @@ router.post("/new-celebrity", (req,res,next)=>{ // SEND
              res.redirect("/celebrities/create")});
 });
 
-router.get("/celebrities", (req,res)=>{
+router.get("/celebrities", (req,res)=>{  // SHOW
     console.log(req.body)
     Celebrity.find().then((celebrities)=>{
         console.log(celebrities)
